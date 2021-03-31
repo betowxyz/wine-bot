@@ -140,6 +140,7 @@ def chatbot(statement):
     return f'Recommendation: {title}, {variety} from {country} costs in average ${price}. Its description is: {description}'
 
 def main():
+    print('intializing bot')
     stop = False
     while not stop:
         statement = input()
