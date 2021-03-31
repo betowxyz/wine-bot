@@ -103,7 +103,7 @@ def extract_numbers_from_string(string):
     return [float(i) for i in new_string.split()]
 
 def chatbot(statement):
-    greetings = ['hello', 'hola', 'hi', 'sup', 'wassup', 'whats up']
+    greetings = ['hello', 'hola', 'hi', 'sup', 'wassup', 'whats up', 'oi']
     exit = ['exit', 'bye', 'stop', 'cancel']
     if(statement in greetings):
         return rd.choice(greetings)
