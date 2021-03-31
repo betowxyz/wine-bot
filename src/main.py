@@ -103,7 +103,7 @@ def extract_numbers_from_string(string):
     return [float(i) for i in new_string.split()]
 
 def chatbot(statement):
-    greetings = ['hello', 'hola', 'hi', 'sup', 'wassup', 'whats up', 'oi']
+    greetings = ['hello', 'hola', 'hi', 'sup', 'wassup', 'whats up']
     exit = ['exit', 'bye', 'stop', 'cancel']
     if(statement in greetings):
         return rd.choice(greetings)
@@ -140,7 +140,6 @@ def chatbot(statement):
     return f'Recommendation: {title}, {variety} from {country} costs in average ${price}. Its description is: {description}'
 
 def main():
-    print('intializing bot')
     stop = False
     while not stop:
         statement = input()
